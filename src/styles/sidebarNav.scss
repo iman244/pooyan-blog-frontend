@@ -1,0 +1,44 @@
+$borderColor: rgba(76, 76, 76, 0.5);
+$hoverColor: rgb(164, 164, 164);
+
+.sidebarNav {
+  position: fixed;
+  transition: 0.5s;
+  height: 100vh;
+  z-index: 1001;
+  background-color: $backgroundColorNav;
+
+  color: white;
+
+  &__wrapper {
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__close-btn {
+    align-self: flex-end;
+    cursor: pointer;
+    font-size: small;
+    width: 28px;
+    height: 28px;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: x-large;
+    padding: 10px 0;
+    border-bottom: 1px solid $borderColor;
+
+    &:hover {
+      color: $hoverColor;
+    }
+  }
+}

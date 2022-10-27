@@ -1,0 +1,80 @@
+@import "breakpoints";
+$backgroundColorNav: rgb(22, 22, 22);
+
+.nav {
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: center;
+
+  &[data-pathname="/"] {
+    &[data-scroll="0"] {
+      background-color: rgba($backgroundColorNav, 0);
+    }
+
+    &:not([data-scroll="0"]) {
+      background-color: rgba($backgroundColorNav, 0.3);
+    }
+  }
+
+  &:not([data-pathname="/"]) {
+    &[data-scroll="0"] {
+      background-color: black;
+    }
+
+    &:not([data-scroll="0"]) {
+      background-color: rgba($backgroundColorNav, 0.3);
+    }
+  }
+
+  &__wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__link-home {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+  }
+  &__logo {
+    transition: all 0.5s;
+    cursor: pointer;
+
+    &[data-scroll="0"] {
+      height: 80px;
+    }
+
+    &:not([data-scroll="0"]) {
+      height: 50px;
+    }
+
+    @include sm {
+      width: 50vw;
+    }
+  }
+  &__menu-btn {
+    color: white;
+    cursor: pointer;
+  }
+  &__items-wrapper {
+    display: flex;
+    gap: 32px;
+  }
+  &__item {
+    color: white;
+    text-transform: capitalize;
+    cursor: pointer;
+    &--active {
+      border-bottom: 1px solid transparent;
+    }
+  }
+  &__sidebarMenu {
+  }
+}

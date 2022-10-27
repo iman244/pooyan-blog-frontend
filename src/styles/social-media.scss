@@ -1,0 +1,15 @@
+.social-media {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  &__link {
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  &__icon {
+  }
+}

@@ -1,0 +1,35 @@
+$borderColor: rgb(119, 119, 119);
+$tagColor: rgb(94, 94, 94);
+$tagValueColor: rgb(143, 110, 110);
+$tagValueColorHover: rgb(71, 71, 71);
+
+.contact {
+  width: 100%;
+  margin-top: 200px;
+
+  &__wrapper {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__header {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $borderColor;
+  }
+
+  &__tag {
+    color: $tagColor;
+  }
+  &__tag-value {
+    color: $tagValueColor;
+    cursor: pointer;
+
+    &:hover {
+      color: $tagValueColorHover;
+    }
+  }
+}
