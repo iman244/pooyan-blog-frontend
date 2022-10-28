@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, matchRoutes, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useQuery, gql } from "@apollo/client";
 
 // components
@@ -26,8 +26,8 @@ const ASSETS = gql`
 `;
 
 export const navItems = [
-  { id: 1, to: "blogs", text: "blogs" },
-  { id: 2, to: "contact", text: "contact" },
+  { id: 1, to: "/blogs", text: "blogs" },
+  { id: 2, to: "/contact", text: "contact" },
 ];
 
 const Nav = ({ className }) => {
@@ -63,19 +63,15 @@ const Nav = ({ className }) => {
       >
         <div className="nav__wrapper">
           <Link className="nav__link-home" to="/">
-            {data ? (
-              <img
-                data-scroll={scroll}
-                className="nav__logo"
-                src={
-                  process.env.REACT_APP_BACKEND +
-                  data?.siteAsset.data.attributes.logo.data[0].attributes.url
-                }
-                alt="logo"
-              />
-            ) : (
-              <h2>SiteName</h2>
-            )}
+            <img
+              data-scroll={scroll}
+              className="nav__logo"
+              src={
+                process.env.REACT_APP_BACKEND +
+                data?.siteAsset.data.attributes.logo.data[0].attributes.url
+              }
+              alt="logo"
+            />
           </Link>
           {viewPortSizeSmall ? (
             <MenuSvg

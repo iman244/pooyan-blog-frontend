@@ -7,11 +7,14 @@ $hoverColor: rgb(164, 164, 164);
   height: 100vh;
   z-index: 1001;
   background-color: $backgroundColorNav;
+  display: flex;
+  overflow: hidden;
 
   color: white;
 
   &__wrapper {
     padding: 40px;
+    width: 100%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;

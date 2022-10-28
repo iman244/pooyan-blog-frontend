@@ -1,4 +1,3 @@
-@import "breakpoints";
 $backgroundColorNav: rgb(22, 22, 22);
 
 .nav {
@@ -46,6 +45,7 @@ $backgroundColorNav: rgb(22, 22, 22);
   &__logo {
     transition: all 0.5s;
     cursor: pointer;
+    object-fit: contain;
 
     &[data-scroll="0"] {
       height: 80px;
@@ -71,10 +71,12 @@ $backgroundColorNav: rgb(22, 22, 22);
     color: white;
     text-transform: capitalize;
     cursor: pointer;
+    border-bottom: 1px solid transparent;
     &--active {
-      border-bottom: 1px solid transparent;
+      color: white;
+      text-transform: capitalize;
+      cursor: pointer;
+      border-bottom: 1px solid white;
     }
-  }
-  &__sidebarMenu {
   }
 }

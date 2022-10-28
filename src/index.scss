@@ -1,16 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Ubuntu:ital@1&display=swap");
+@import "styles/vars";
 @import "styles/breakpoints";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Ubuntu:ital@1&display=swap");
 @import "styles/blog-abstract.scss";
+@import "styles/blogs.scss";
 @import "styles/blog.scss";
+@import "styles/categories.scss";
 @import "styles/contact.scss";
 @import "styles/first-paragraph.scss";
 @import "styles/landing.scss";
 @import "styles/home.scss";
 @import "styles/introductions.scss";
 @import "styles/introduction.scss";
+@import "styles/information.scss";
 @import "styles/nav.scss";
 @import "styles/page.scss";
 @import "styles/pageNotFound.scss";
+@import "styles/QueryModule.scss";
 @import "styles/sidebarNav.scss";
 @import "styles/social-media.scss";
 
@@ -34,6 +39,9 @@ h3,
 h4,
 h5,
 h6,
+ul,
+ol,
+li,
 a,
 p {
   all: unset;

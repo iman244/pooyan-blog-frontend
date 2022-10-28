@@ -1,3 +1,10 @@
 .page {
   display: flex;
+  width: 100%;
+  &__content {
+    width: 100%;
+    &:not([data-pathname="/"]) {
+      margin-top: 150px;
+    }
+  }
 }

@@ -1,0 +1,23 @@
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+
+  &__item {
+    text-transform: capitalize;
+    color: $color;
+    font-weight: 400;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &--active {
+      color: $activeColor;
+      font-weight: 500;
+    }
+  }
+}
