@@ -4,7 +4,16 @@
   &__content {
     width: 100%;
     &:not([data-pathname="/"]) {
+      box-sizing: border-box;
       margin-top: 150px;
+      margin-left: auto;
+      margin-right: auto;
+      width: $pageWidthlg;
+      max-width: $pageMaxWidthxl;
+
+      @include xl {
+        max-width: $pageMaxWidthAll;
+      }
     }
   }
 }

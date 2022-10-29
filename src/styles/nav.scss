@@ -5,7 +5,7 @@ $backgroundColorNav: rgb(22, 22, 22);
   position: fixed;
   z-index: 1000;
   width: 100%;
-  padding: 16px 20px;
+
   display: flex;
   justify-content: center;
 
@@ -34,6 +34,18 @@ $backgroundColorNav: rgb(22, 22, 22);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 16px 24px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: $pageMaxWidthxl;
+
+    @include lg {
+    }
+
+    @include xl {
+      max-width: $pageMaxWidthAll;
+    }
   }
 
   &__link-home {
@@ -56,7 +68,6 @@ $backgroundColorNav: rgb(22, 22, 22);
     }
 
     @include sm {
-      width: 50vw;
     }
   }
   &__menu-btn {

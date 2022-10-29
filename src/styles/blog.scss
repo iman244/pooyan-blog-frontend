@@ -1,0 +1,16 @@
+.blog {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  &__title {
+    color: $secondColor;
+    font-size: xx-large;
+  }
+
+  &__information {
+  }
+  &__photo {
+    max-width: 100%;
+  }
+}

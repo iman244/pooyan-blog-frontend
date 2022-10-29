@@ -12,9 +12,9 @@
   &__photo {
     width: 100%;
     object-fit: cover;
-    height: 250px;
+    max-height: 200px;
     @include lg {
-      max-height: 200px;
+      height: 250px;
     }
   }
 
@@ -36,13 +36,13 @@
   }
 
   &__read-more {
-    color: $controllColor;
+    color: $secondColor;
     font-size: medium;
     cursor: pointer;
     width: fit-content;
 
     &:hover {
-      color: $hoverControllColor;
+      color: $hoverSecondColor;
     }
   }
 }

@@ -8,23 +8,23 @@ $bodyColor: rgb(94, 94, 94);
   gap: 50px;
 
   &__photo {
-    grid-column: span 1;
+    grid-column: span 2;
     max-width: 100%;
 
     @include md {
-      grid-column: span 2;
+      grid-column: span 1;
     }
   }
 
   &__text-content {
-    grid-column: span 1;
+    grid-column: span 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
 
     @include md {
-      grid-column: span 2;
+      grid-column: span 1;
     }
   }
 

@@ -3,21 +3,28 @@ $activeColor: rgb(143, 110, 110);
 .blogs {
   display: flex;
   flex-direction: column;
+  gap: 40px;
   width: 100%;
+
+  &__categories {
+    justify-content: center;
+    align-items: center;
+  }
 
   &__list {
     box-sizing: border-box;
-    padding: 40px 100px;
+
+    // padding: 30px 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
 
     @include md {
-      padding: 30px;
+      // padding: 40px 60px;
     }
 
     @include lg {
-      padding: 40px 60px;
+      // padding: 40px 100px;
     }
   }
 

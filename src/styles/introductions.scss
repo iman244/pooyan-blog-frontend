@@ -31,12 +31,11 @@ $borderColor: rgb(119, 119, 119);
 
     &--dense {
       > :first-child {
-        order: 1;
+        order: 0;
       }
-
       @include md {
         > :first-child {
-          order: 0;
+          order: 1;
         }
       }
     }

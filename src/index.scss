@@ -2,6 +2,7 @@
 @import "styles/breakpoints";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Ubuntu:ital@1&display=swap");
 @import "styles/blog-abstract.scss";
+@import "styles/blog-details.scss";
 @import "styles/blogs.scss";
 @import "styles/blog.scss";
 @import "styles/categories.scss";
@@ -12,6 +13,7 @@
 @import "styles/introductions.scss";
 @import "styles/introduction.scss";
 @import "styles/information.scss";
+@import "styles/mini-blog.scss";
 @import "styles/nav.scss";
 @import "styles/page.scss";
 @import "styles/pageNotFound.scss";
@@ -30,7 +32,6 @@ body,
 .App {
   margin: 0;
   width: 100%;
-  // min-height: 100vh;
 }
 
 h1,

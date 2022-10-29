@@ -1,0 +1,25 @@
+.mini-blog {
+  display: flex;
+  gap: 16px;
+  cursor: pointer;
+
+  &__photo {
+    object-fit: cover;
+    width: 110px;
+    height: 110px;
+  }
+
+  &__wrapper-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__title {
+    font-size: medium;
+  }
+  &__createdAt {
+    font-size: smaller;
+    color: $minorColor;
+  }
+}
